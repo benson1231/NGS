@@ -42,7 +42,6 @@ docker tag (名稱) (tag)
 ```
 docker push (tag) 
 ```
-# 線上  https://labs.play-with-docker.com/
 # 拉資料
 ```
 docker pull (tag)
