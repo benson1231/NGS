@@ -33,6 +33,19 @@ docker push (tag)
 ```
 docker pull (tag)
 ```
+# 列出image
+```bash
+# running
+docker ps
+# all images
+docker ps -a
+```
+# 移除
+```bash
+# ID - images for deletion
+docker rm ID
+```
+
 
 
 
