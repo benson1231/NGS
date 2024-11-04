@@ -26,6 +26,8 @@ docker ps -a
 # 運行container
 ```
 docker run (名稱)
+# run in the background
+docker run -d (名稱)
 ```
 # start/stop container
 ```bash
