@@ -33,17 +33,21 @@ docker push (tag)
 ```
 docker pull (tag)
 ```
-# 列出image
+# 列出container
 ```bash
-# running
-docker ps
-# all images
+# running 
+docker ps containers
+# all containers
 docker ps -a
 ```
-# 移除
+# 移除containers
 ```bash
-# ID - images for deletion
+# ID - containers id for deletion
 docker rm ID
+```
+# 移除images
+```bash
+docker rmi images_name
 ```
 
 
