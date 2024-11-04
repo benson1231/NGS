@@ -16,7 +16,7 @@ docker build -t (名稱) .
 ```
 docker images
 ```
-# 
+# 運行
 ```
 docker run (名稱)
 ```
