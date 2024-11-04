@@ -41,6 +41,10 @@ git log --oneline
 # file_id - from git log
 git diff file_id -- file_name
 ```
+### restore
+```bash
+git restore file_name
+```
 ### reset
 ```bash
 # save way to reset
