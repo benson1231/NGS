@@ -12,7 +12,7 @@ CMD node / index.js
 ```
 docker build -t (名稱) .
 ```
-# 
+# 查看images
 ```
 docker images
 ```
