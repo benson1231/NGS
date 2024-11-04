@@ -2,7 +2,7 @@
 ```bash
 docker version
 ```
-# VS code 資料夾中建立 Dockerfile
+# 建立 Dockerfile
 ```
 FROM node:14-alpine
 COPY index.js index.js
@@ -16,9 +16,20 @@ docker build -t (名稱) .
 ```
 docker images
 ```
-# 運行
+# 列出container
+```bash
+# running containers
+docker ps
+# all containers
+docker ps -a
+```
+# 運行container
 ```
 docker run (名稱)
+```
+# stop container
+```bash
+docker stop container_ID
 ```
 # 加上tag(docker-hub-name/repo)
 ```
@@ -32,13 +43,6 @@ docker push (tag)
 # 拉資料
 ```
 docker pull (tag)
-```
-# 列出container
-```bash
-# running containers
-docker ps
-# all containers
-docker ps -a
 ```
 # 移除containers
 ```bash
