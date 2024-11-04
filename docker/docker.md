@@ -27,8 +27,11 @@ docker ps -a
 ```
 docker run (名稱)
 ```
-# stop container
+# start/stop container
 ```bash
+# start
+docker start container_ID
+# stop
 docker stop container_ID
 ```
 # 加上tag(docker-hub-name/repo)
