@@ -1,3 +1,7 @@
+# version
+```bash
+docker version
+```
 # VS code 資料夾中建立 Dockerfile
 ```
 FROM node:14-alpine
