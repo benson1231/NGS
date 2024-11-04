@@ -35,8 +35,8 @@ docker pull (tag)
 ```
 # 列出container
 ```bash
-# running 
-docker ps containers
+# running containers
+docker ps
 # all containers
 docker ps -a
 ```
