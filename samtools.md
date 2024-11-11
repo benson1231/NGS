@@ -33,8 +33,9 @@ samtools view -h example.bam
 # View only the header of the BAM file
 samtools view -H example.bam
 ```
-# Extract alignments in a specific region (e.g., chromosome 1 from 1M to 2M)
+# Extract alignments in a specific region
 ```bash
+# chromosome 1 from 1M to 2M
 samtools view example.bam 1:1000000-2000000 | head
 # Extract alignments within regions specified in a BED file
 samtools view -L example.bed example.bam
