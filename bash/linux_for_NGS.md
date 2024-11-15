@@ -80,6 +80,91 @@ more +5 file.txt    # 從第 5 行開始顯示 file.txt
 less file.txt       # 打開 file.txt，可以上下滾動查看內容
 less +G file.txt    # 從文件末尾開始顯示
 ```
+### head
+```bash
+# head: view the first lines of a file
+head file.txt             # 顯示 file.txt 的前 10 行
+head -n 5 file.txt        # 顯示 file.txt 的前 5 行
+```
+### tail
+```bash
+# tail: view the last lines of a file
+tail file.txt             # 顯示 file.txt 的最後 10 行
+tail -n 5 file.txt        # 顯示 file.txt 的最後 5 行
+tail -f file.txt          # 實時查看 file.txt 的新增行
+```
+### wc
+```bash
+# wc: word, line, character count
+wc file.txt               # 顯示 file.txt 的行數、字數和字節數
+wc -l file.txt            # 只顯示行數
+wc -w file.txt            # 只顯示字數
+wc -c file.txt            # 只顯示字節數
+```
+### cat
+```bash
+# cat: concatenate and display files
+cat file1.txt             # 顯示 file1.txt 的內容
+cat file1.txt file2.txt   # 顯示 file1.txt 和 file2.txt 的內容
+cat file1.txt > file3.txt # 將 file1.txt 的內容寫入 file3.txt
+```
+### stdin, stdout, stderr
+```bash
+# 標準輸入、輸出和錯誤輸出
+command < input.txt       # 從文件 input.txt 獲取輸入
+command > output.txt      # 將輸出寫入 output.txt
+command 2> error.txt      # 將錯誤輸出寫入 error.txt
+command >> output.txt     # 將輸出追加到 output.txt
+```
+### sort
+```bash
+# sort: sort lines of text files
+sort file.txt             # 對 file.txt 的行進行排序
+sort -r file.txt          # 逆序排序
+sort -n file.txt          # 按數字排序
+```
+### uniq
+```bash
+# uniq: report or omit repeated lines
+uniq file.txt             # 刪除重複行（需要先排序）
+uniq -c file.txt          # 列出每行重複次數
+```
+### cut
+```bash
+# cut: remove sections from each line of files
+cut -f 1,3 file.txt       # 顯示 file.txt 的第 1 和第 3 欄（預設分隔符為 TAB）
+cut -d ',' -f 2 file.csv  # 使用逗號分隔，顯示第 2 欄
+```
+### comm
+```bash
+# comm: compare two sorted files line by line
+comm file1.txt file2.txt  # 比較兩個排序過的文件
+comm -1 file1.txt file2.txt # 只顯示 file2.txt 特有的行
+```
+### gzip / gunzip
+```bash
+# gzip: compress files
+gzip file.txt             # 壓縮 file.txt 為 file.txt.gz
+
+# gunzip: decompress files
+gunzip file.txt.gz        # 解壓縮 file.txt.gz
+```
+### bzip2 / bunzip2
+```bash
+# bzip2: compress files
+bzip2 file.txt            # 壓縮 file.txt 為 file.txt.bz2
+
+# bunzip2: decompress files
+bunzip2 file.txt.bz2      # 解壓縮 file.txt.bz2
+```
+### tar
+```bash
+# tar: archive files
+tar -cvf archive.tar dir/  # 將目錄 dir/ 打包成 archive.tar
+tar -xvf archive.tar       # 解壓縮 archive.tar
+tar -czvf archive.tar.gz dir/  # 打包並使用 gzip 壓縮為 archive.tar.gz
+tar -xzvf archive.tar.gz   # 解壓縮 .tar.gz 文件
+```
 ### 通配符（Wildcard）
 ```bash
 # *: 匹配零個或多個任意字符
