@@ -68,6 +68,18 @@ rm -rf dir/            # 強制遞歸刪除目錄 dir 及其內容
 rmdir empty_dir        # 刪除空目錄 empty_dir
 rmdir -p dir1/dir2     # 遞歸刪除空目錄 dir2 和其父目錄 dir1
 ```
+### more
+```bash
+# more: view file contents one screen at a time
+more file.txt       # 逐屏顯示 file.txt 的內容
+more +5 file.txt    # 從第 5 行開始顯示 file.txt
+```
+### less
+```bash
+# less: view file contents with scrolling support
+less file.txt       # 打開 file.txt，可以上下滾動查看內容
+less +G file.txt    # 從文件末尾開始顯示
+```
 ### 通配符（Wildcard）
 ```bash
 # *: 匹配零個或多個任意字符
