@@ -170,6 +170,10 @@ tar -cvf archive.tar dir/  # 將目錄 dir/ 打包成 archive.tar
 tar -xvf archive.tar       # 解壓縮 archive.tar
 tar -czvf archive.tar.gz dir/  # 打包並使用 gzip 壓縮為 archive.tar.gz
 tar -xzvf archive.tar.gz   # 解壓縮 .tar.gz 文件
+
+# method2
+tar -cvf archive.tar dir/
+gzip archive.tar
 ```
 ### 通配符（Wildcard）
 ```bash
