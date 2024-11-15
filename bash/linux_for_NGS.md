@@ -165,11 +165,16 @@ bunzip2 file.txt.bz2      # 解壓縮 file.txt.bz2
 ```
 ### tar
 ```bash
-# tar: archive files
-tar -cvf archive.tar dir/  # 將目錄 dir/ 打包成 archive.tar
-tar -xvf archive.tar       # 解壓縮 archive.tar
-tar -czvf archive.tar.gz dir/  # 打包並使用 gzip 壓縮為 archive.tar.gz
-tar -xzvf archive.tar.gz   # 解壓縮 .tar.gz 文件
+# 創建壓縮文件
+tar -cvf archive.tar file1 file2  # 創建 tar 文件
+tar -czvf archive.tar.gz file1 file2  # 創建 gzip 壓縮的 tar 文件
+
+# 解壓 tar 文件
+tar -xvf archive.tar  # 解壓 tar 文件
+tar -xzvf archive.tar.gz  # 解壓 gzip 壓縮的 tar 文件
+
+# 查看壓縮文件內容
+tar -tvf archive.tar
 
 # method2
 tar -cvf archive.tar dir/
@@ -280,21 +285,6 @@ chmod 644 file.txt  # 設置文件為 rw-r--r--
 chmod u+x file.txt  # 為文件所有者添加執行權限
 chmod g-w file.txt  # 移除文件所在組的寫權限
 chmod o+r file.txt  # 為其他用戶添加讀取權限
-```
-### tar
-```bash
-# 壓縮和解壓文件
-
-# 創建壓縮文件
-tar -cvf archive.tar file1 file2  # 創建 tar 文件
-tar -czvf archive.tar.gz file1 file2  # 創建 gzip 壓縮的 tar 文件
-
-# 解壓 tar 文件
-tar -xvf archive.tar  # 解壓 tar 文件
-tar -xzvf archive.tar.gz  # 解壓 gzip 壓縮的 tar 文件
-
-# 查看壓縮文件內容
-tar -tvf archive.tar
 ```
 ### curl
 ```bash
