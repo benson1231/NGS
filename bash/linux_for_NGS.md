@@ -29,12 +29,44 @@ ls -t  # Sort by descending time modified
 # display online manual documentation pages
 man ls
 ```
-
+### mkdir
 ```bash
-
+# mkdir: make directories
+mkdir new_dir       # 創建一個名為 new_dir 的目錄
+mkdir -p dir1/dir2  # 創建嵌套目錄 dir1 和 dir2（如果不存在）
 ```
+### cp
 ```bash
-
+# cp: copy files and directories
+cp file1 file2         # 複製 file1 為 file2
+cp file1 dir/          # 複製 file1 到目錄 dir 中
+cp -r dir1 dir2        # 遞歸複製目錄 dir1 到 dir2
+cp -i file1 file2      # 複製前詢問覆蓋確認
+cp -v file1 dir/       # 顯示執行過程中的詳細信息
+```
+### mv
+```bash
+# mv: move (rename) files
+mv file1 file2         # 將 file1 重命名為 file2
+mv file1 dir/          # 移動 file1 到目錄 dir 中
+mv dir1 dir2           # 重命名或移動目錄 dir1 為 dir2
+mv -i file1 file2      # 移動前詢問覆蓋確認
+mv -v file1 dir/       # 顯示執行過程中的詳細信息
+```
+### rm
+```bash
+# rm: remove files or directories
+rm file1               # 刪除 file1
+rm -i file1            # 刪除前詢問確認
+rm -r dir/             # 遞歸刪除目錄 dir 及其內容
+rm -f file1            # 強制刪除 file1，不提示確認
+rm -rf dir/            # 強制遞歸刪除目錄 dir 及其內容
+```
+### rmdir
+```bash
+# rmdir: remove empty directories
+rmdir empty_dir        # 刪除空目錄 empty_dir
+rmdir -p dir1/dir2     # 遞歸刪除空目錄 dir2 和其父目錄 dir1
 ```
 ### 通配符（Wildcard）
 ```bash
@@ -69,6 +101,17 @@ grep "[aeiou]" file.txt  # 匹配包含元音字母的行
 
 # \: 用於轉義特殊字符
 grep "\." file.txt  # 匹配包含 . 的行
+
+# {}: 使用大括號進行擴展（Brace Expansion）
+# 生成一系列文件名或模式
+echo file{1,2,3}.txt  # 輸出 file1.txt file2.txt file3.txt
+# 生成範圍
+echo file{1..5}.txt  # 輸出 file1.txt file2.txt file3.txt file4.txt file5.txt
+# 嵌套使用
+echo file{A,B}_{1,2}.txt  # 輸出 fileA_1.txt fileA_2.txt fileB_1.txt fileB_2.txt
+# 組合目錄和文件
+mkdir -p project/{src,doc}/{draft,final}  
+# 創建目錄 project/src/draft, project/src/final, project/doc/draft, project/doc/final
 ```
 ### grep
 ```bash
