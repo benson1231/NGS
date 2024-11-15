@@ -116,6 +116,11 @@ command > output.txt      # 將輸出寫入 output.txt
 command 2> error.txt      # 將錯誤輸出寫入 error.txt
 command >> output.txt     # 將輸出追加到 output.txt
 ```
+### |
+```bash
+# pipe: pass the output of one command as input to another command
+command1 | command2       # 將 command1 的輸出作為 command2 的輸入
+```
 ### sort
 ```bash
 # sort: sort lines of text files
