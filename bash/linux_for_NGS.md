@@ -175,6 +175,11 @@ tar -xzvf archive.tar.gz   # 解壓縮 .tar.gz 文件
 tar -cvf archive.tar dir/
 gzip archive.tar
 ```
+### zcat
+```bash
+# view gz file
+zcat file.gz
+```
 ### 通配符（Wildcard）
 ```bash
 # *: 匹配零個或多個任意字符
