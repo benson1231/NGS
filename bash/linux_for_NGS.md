@@ -127,6 +127,7 @@ command1 | command2       # 將 command1 的輸出作為 command2 的輸入
 sort file.txt             # 對 file.txt 的行進行排序
 sort -r file.txt          # 逆序排序
 sort -n file.txt          # 按數字排序
+sort -u file.txt          # 去除重複的行，只保留唯一的行。
 ```
 ### uniq
 ```bash
