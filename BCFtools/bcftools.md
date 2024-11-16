@@ -1,4 +1,6 @@
-# 使用 bcftools view 轉換 BCF/VCF 格式
+### Update:2024.11.16
+### https://github.com/samtools/bcftools
+### 使用 bcftools view 轉換 BCF/VCF 格式
 ```bash
 # 查看壓縮的 BCF 檔案內容並轉換為壓縮的 VCF 格式
 bcftools view -Oz -o output.vcf.gz input.bcf
@@ -13,7 +15,7 @@ bcftools view -r chr1:1000000-2000000 -Oz -o region_filtered.vcf.gz input.bcf
 # 使用 `-R` 從檔案中指定多個區域，檔案格式為 BED 標準格式
 bcftools view -R regions.bed -Oz -o file_filtered.vcf.gz input.bcf
 ```
-# 使用 bcftools call 進行變異檢測
+### 使用 bcftools call 進行變異檢測
 ```bash
 # 進行變異檢測並使用 `-m` 算法進行多等位變異檢測
 bcftools mpileup -Ou -f reference.fa input.bam | bcftools call -mv -Oz -o output_variants.vcf.gz
