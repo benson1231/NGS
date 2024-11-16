@@ -22,7 +22,7 @@ samtools merge output.bam NA12814_1.bam NA12814_2.bam
 ### samtools view
 ```bash
 # SAM TO BAM conversion
-samtools view -bT ref.fa in.sam.gz
+samtools view -b -t ex1.fa.fai -o ex1.bam ex1.sam.gz
 # BAM TO SAM conversion
 samtools view -h in.bam
 
