@@ -1,3 +1,4 @@
+### https://github.com/samtools/samtools
 ### samtools flagstat
 ```bash
 # 使用flagstat命令查看對齊數量
