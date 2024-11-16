@@ -1,3 +1,5 @@
+### Updata:2024.11.16
+### Ref:https://github.com/arq5x/bedtools2  
 # BEDtools Intersect - Overlapping Exons with Alus Regions
 ```bash
 # Run BEDtools intersect between RefSeq exons (RefSeq.gtf) and Alus annotations (Alus.bed)
