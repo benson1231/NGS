@@ -1,39 +1,45 @@
-# version
+### docker version
 ```bash
 docker version
 ```
-# 建立 Dockerfile
+### 建立 Dockerfile
 ```
+# 基礎映像檔，使用 Node.js 的輕量版本
+# 複製應用程式的主程式到容器內
+# 定義容器啟動時要執行的指令
 FROM node:14-alpine
 COPY index.js index.js
 CMD node / index.js
 ```
-# 創建docker
+### docker build
 ```
-docker build -t (名稱) .
+# 創建docker images
+docker build -t image_name .
+```
+### docker images
 ```
 # 查看images
-```
 docker images
 ```
-# 列出container
+### docker ps
 ```bash
-# running containers
+# list running containers
 docker ps
-# all containers
+# list all containers
 docker ps -a
 ```
-# 運行container
+### docker run
 ```
-docker run (名稱)
+# run container
+docker run container_name
 # run in the background
-docker run -d (名稱)
+docker run -d container_name
 ```
-# start/stop container
+### docker start/stop
 ```bash
-# start
+# start container
 docker start container_ID
-# stop
+# stop container
 docker stop container_ID
 ```
 # 加上tag(docker-hub-name/repo)
