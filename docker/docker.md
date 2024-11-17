@@ -30,10 +30,10 @@ docker ps -a
 ```
 ### docker run
 ```
-# run container
-docker run container_name
-# run in the background
-docker run -d container_name
+# run image in container
+docker run image_name
+# run image in container at background
+docker run -d image_name
 ```
 ### docker start/stop
 ```bash
@@ -42,27 +42,32 @@ docker start container_ID
 # stop container
 docker stop container_ID
 ```
-# 加上tag(docker-hub-name/repo)
-```
-docker tag (名稱) (tag)
-```
-# 上傳
-```
-docker push (tag) 
-```
-# 拉資料
-```
-docker pull (tag)
-```
-# 移除containers
+### docker rm
 ```bash
-# ID - containers id for deletion
-docker rm ID
+# remove container
+docker rm container_ID
 ```
-# 移除images
+### docker rmi
 ```bash
-docker rmi images_name
+# remove image
+docker rmi image_name
 ```
+### docker tag
+```
+# add tag(docker_hub_name/repo)
+docker tag local_image:tagname docker_hub_name/repo:tagname
+```
+### docker push
+```
+# push to docker-hub repo
+docker push docker_hub_name/repo:tagname
+```
+### docker pull
+```
+# pull image to local
+docker pull docker_hub_name/repo:tagname
+```
+
 
 
 
