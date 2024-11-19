@@ -49,8 +49,10 @@ git restore file_name
 ```bash
 # save way to reset
 git check file_id -- file_name
-# Warning : irreversible reset
-git reset --hard file_id
+
+git reset --soft HEAD~1   # 撤銷上一個 commit，保留改動
+git reset --mixed HEAD~1  # 撤銷上一個 commit，保留改動但不進入 staging area
+git reset --hard HEAD~1   # 完全撤銷上一個 commit，包括文件改動
 ```
 ### create .gitignore file to ignore track
 ```bash
