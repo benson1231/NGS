@@ -1,45 +1,41 @@
-# Ref:https://www.codecademy.com/learn/learn-git/modules/learn-git-git-workflow-u/cheatsheet
-# git
+### Ref:https://www.codecademy.com/learn/learn-git/modules/learn-git-git-workflow-u/cheatsheet 
 ### git version
 ```bash
 git --version
 ```
-### anthor details
+### git init
 ```bash
-git config --global user.name "your name"
-git config --global user.email "your email"
-```
-### initiation-change dir to git repo
-```bash
+# Initializing a Git Repository
 git init
 ```
-### check file status
+### git status
 ```bash
+# Checking the Status of a Git Repository
 git status
 ```
-### track the file
+### git add
 ```bash
-# your file
-git add your_file_name
+git add file_name
 # all md file
 git add *.md
 # all file in wd
 git add .
 ```
-### archive(take photo)
+### git commit
 ```bash
-# m - message
+# archive(like take photo)
 git commit -m "your_message"
 ```
-### modyfication history
+### git log
 ```bash
-# q for leave 
+# Showing git commit logs
 git log
+# Showing git commit logs for one line
 git log --oneline
 ```
-### different
+### git diff
 ```bash
-# file_id - from git log
+git diff file_name
 git diff file_id -- file_name
 ```
 ### restore
