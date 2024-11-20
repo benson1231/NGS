@@ -51,15 +51,15 @@ git reset --soft HEAD~1   # 撤銷上一個commit，保留改動
 git reset --mixed HEAD~1  # 撤銷commit並保留改動（不進入暫存區）
 git reset --hard HEAD~1   # 完全撤銷commit，刪除改動
 ```
-### create .gitignore file to ignore track
-```bash
-*.png   # 忽略所有 .png 文件
-```
 ### git config
 ```bash
 git config --global alias.glop "log --pretty=format:'%h %s' --graph"
 # 使用別名顯示提交歷史：
 git glop
+```
+### create .gitignore file to ignore track
+```bash
+*.png   # 忽略所有 .png 文件
 ```
 
 # github commands
