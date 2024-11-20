@@ -63,6 +63,10 @@ git glop
 ```
 
 # github commands
+### git clone
+```bash
+git clone https://github.com/benson1231/git_test.git
+```
 ### git connection repo
 ```bash
 # 查看遠程repo
@@ -93,10 +97,6 @@ git merge branch-name
 git checkout -b new_branch_name
 git checkout main
 git checkout HEAD filename
-```
-### git clone
-```bash
-git clone https://github.com/benson1231/git_test.git
 ```
 ### git pull
 ```bash
