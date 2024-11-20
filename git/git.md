@@ -67,25 +67,27 @@ git glop
 ```bash
 git clone https://github.com/benson1231/git_test.git
 ```
-### git connection repo
+### git remote
 ```bash
 # 查看遠程repo
 git remote -v
 # 添加遠程repo
 git remote add origin https://github.com/benson1231/git_test.git
 ```
+### git remote
 ```bash
 # 設置分支名稱
 git branch -M main
-```
-```bash
-# 推送到遠程repo
-git push -u origin main
 ```
 ### git branch
 ```bash
 git branch                     # list branchs
 git branch -d branch_name      # delete branch
+```
+### git push
+```bash
+# 推送到遠程repo
+git push -u origin main
 ```
 ### git merge
 ```bash
