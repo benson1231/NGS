@@ -65,6 +65,8 @@ git glop
 # github commands
 ### git connection repo
 ```bash
+# 查看遠程repo
+git remote -v
 # 添加遠程repo
 git remote add origin https://github.com/benson1231/git_test.git
 ```
@@ -100,11 +102,6 @@ git clone https://github.com/benson1231/git_test.git
 ```bash
 # 從遠程repo拉取更新
 git pull origin branch_name
-```
-### git remote
-```bash
-# 查看遠程repo
-git remote -v
 ```
 ### git fetch
 ```bash
