@@ -72,11 +72,11 @@ git remote add origin https://github.com/benson1231/git_test.git
 ```
 ```bash
 # 設置分支名稱
-git branch -M branch_name
+git branch -M main
 ```
 ```bash
 # 推送到遠程repo
-git push -u origin branch_name
+git push -u origin main
 ```
 ### git branch
 ```bash
