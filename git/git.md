@@ -100,12 +100,12 @@ git checkout HEAD filename
 ```
 ### git pull
 ```bash
-# 從遠程repo拉取更新
+# 從遠程倉庫拉取最新內容並自動合併到當前分支
 git pull origin branch_name
 ```
 ### git fetch
 ```bash
-# 拉取遠程倉庫的最新內容（但不合併）
+# 從遠程倉庫獲取最新的提交歷史與分支更新，但不更新本地工作區
 git fetch
 ```
 
