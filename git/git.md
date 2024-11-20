@@ -1,6 +1,8 @@
 ### Ref:https://www.codecademy.com/learn/learn-git/modules/learn-git-git-workflow-u/cheatsheet 
+# git Commands
 ### git version
 ```bash
+# 查看 Git 版本
 git --version
 ```
 ### git init
@@ -15,83 +17,100 @@ git status
 ```
 ### git add
 ```bash
-git add file_name
-# all md file
-git add *.md
-# all file in wd
-git add .
+git add file_name        # 添加指定文件
+git add *.md             # 添加所有 Markdown 文件
+git add .                # 添加所有文件
 ```
 ### git commit
 ```bash
 # archive(like take photo)
-git commit -m "your_message"
+git commit -m "your_message"   # 提交並附加訊息
+git commit --amend             # 修改上一個提交
 ```
 ### git log
 ```bash
 # Showing git commit logs
-git log
-# Showing git commit logs for one line
-git log --oneline
+git log                     # 顯示詳細提交歷史
+git log --oneline           # 每個提交顯示一行
+git log --oneline --graph   # 以圖形方式顯示提交歷史
 ```
 ### git diff
 ```bash
-git diff file_name
-git diff file_id -- file_name
+git diff file_name                  # 查看文件改動
+git diff commit_SHA -- file_name    # 比較指定提交版本與文件
 ```
 ### restore
 ```bash
+# 恢復文件至最後一次提交
 git restore file_name
 ```
 ### reset
 ```bash
-# save way to reset
-git check file_id -- file_name
-
-git reset --soft HEAD~1   # 撤銷上一個 commit，保留改動
-git reset --mixed HEAD~1  # 撤銷上一個 commit，保留改動但不進入 staging area
-git reset --hard HEAD~1   # 完全撤銷上一個 commit，包括文件改動
+# 撤銷提交
+git reset --soft HEAD~1   # 撤銷上一個commit，保留改動
+git reset --mixed HEAD~1  # 撤銷commit並保留改動（不進入暫存區）
+git reset --hard HEAD~1   # 完全撤銷commit，刪除改動
 ```
 ### create .gitignore file to ignore track
 ```bash
-# ignore .png file
-*.png
+*.png   # 忽略所有 .png 文件
+```
+### git config
+```bash
+git config --global alias.glop "log --pretty=format:'%h %s' --graph"
+# 使用別名顯示提交歷史：
+git glop
 ```
 
-# github
+# github commands
 ### git connection repo
 ```bash
-# http address
+# 添加遠程repo
 git remote add origin https://github.com/benson1231/git_test.git
 ```
 ```bash
-git branch -M main
+# 設置分支名稱
+git branch -M branch_name
 ```
 ```bash
-git push -u origin main
+# 推送到遠程repo
+git push -u origin branch_name
 ```
-### inspect branch
+### git branch
 ```bash
-git branch
+git branch                     # list branchs
+git branch -d branch_name      # delete branch
 ```
-### switch new branch
+### git merge
 ```bash
-# checkout - switch branch
+git merge branch-name
+```
+### git checkout
+```bash
+# switch branch
 git checkout -b new_branch_name
 git checkout main
+git checkout HEAD filename
 ```
-### push to github
-```bash
-git push origin branch_name
-```
-### clone from github
+### git clone
 ```bash
 git clone https://github.com/benson1231/git_test.git
 ```
-### pull from github repo
+### git pull
 ```bash
+# 從遠程repo拉取更新
 git pull origin branch_name
 ```
-
+### git remote
+```bash
+# 查看遠程repo
+git remote -v
+```
+### git fetch
+```bash
+# 拉取遠程倉庫的最新內容（但不合併）
+git fetch
+```
 
 
 
