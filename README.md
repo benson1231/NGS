@@ -26,10 +26,13 @@
 #### [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/): Trimming of adapters and low-quality bases for methylation sequencing.
 #### [Bismark](https://github.com/FelixKrueger/Bismark): Alignment and methylation extraction from bisulfite-treated sequencing data.
 #### [samtools](https://github.com/samtools/samtools): Conversion, sorting, and indexing of SAM/BAM files from methylation alignments.
-#### [picard](https://broadinstitute.github.io/picard/): Mark duplicates for bisulfite sequencing data.
+#### [picard](https://github.com/broadinstitute/picard): Mark duplicates for bisulfite sequencing data.
 #### [MethylKit](https://github.com/al2na/methylKit): Differential methylation analysis and visualization of methylation data.
 #### [BS-Seeker2](https://github.com/BS-Seeker/BSseeker2): Bisulfite sequencing alignment and methylation calling.
 #### [DeepTools](https://deeptools.readthedocs.io/en/develop/): Visualization of methylation and coverage data.
 #### [methpipe](https://github.com/smithlabcode/methpipe): Comprehensive analysis pipeline for methylation data.
+#### [Sesame](https://github.com/zwdzwd/sesame): Accurate and efficient analysis pipeline for Illumina methylation arrays.
+
+
 
 
