@@ -30,7 +30,7 @@
 
 # reference genome from ensembl
 
-#### [reference genome data repo](https://ftp.ensembl.org/pub/)
+#### [reference genome data](https://ftp.ensembl.org/pub/)
 
 
 
