@@ -28,9 +28,9 @@
 
 ---
 
-# reference genome from ensembl
+# Reference genome from ensembl
 
-#### [reference genome data](https://ftp.ensembl.org/pub/)
+#### [Reference genome data](https://ftp.ensembl.org/pub/)
 
 
 
