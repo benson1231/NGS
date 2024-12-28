@@ -26,6 +26,12 @@
 #### [DeepTools](https://deeptools.readthedocs.io/en/develop/): Visualization of methylation and coverage data.
 #### [methpipe](https://github.com/smithlabcode/methpipe): Comprehensive analysis pipeline for methylation data.
 
+---
+
+# reference genome from ensembl
+
+#### [reference genome data repo](https://ftp.ensembl.org/pub/)
+
 
 
 
