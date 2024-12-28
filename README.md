@@ -14,7 +14,7 @@
 #### [MultiQC](https://github.com/MultiQC/MultiQC): Combines multiple QC reports into a single summary.
 #### [BWA](https://github.com/lh3/bwa): Alignment of DNA sequencing reads to a reference genome.
 #### [samtools](https://www.htslib.org/): Processing, sorting, and indexing of SAM/BAM files.
-#### [Picard](https://broadinstitute.github.io/picard/): Marking duplicates and calculating alignment metrics.
+#### [Picard](https://github.com/broadinstitute/picard): Marking duplicates and calculating alignment metrics.
 #### [GATK](https://github.com/broadinstitute/gatk): Variant calling and filtering to generate VCF files.
 #### [vcftools](https://vcftools.github.io/): Analysis and filtering of VCF files.
 
