@@ -11,7 +11,6 @@
 # DNAseq tools
 
 #### [BWA](https://github.com/lh3/bwa): Alignment of DNA sequencing reads to a reference genome.
-#### [samtools](https://github.com/samtools/samtools): Processing, sorting, and indexing of SAM/BAM files.
 #### [Picard](https://github.com/broadinstitute/picard): Marking duplicates and calculating alignment metrics.
 #### [GATK](https://github.com/broadinstitute/gatk): Variant calling and filtering to generate VCF files.
 #### [vcftools](https://github.com/vcftools/vcftools): Analysis and filtering of VCF files.
@@ -20,12 +19,12 @@
 
 # DNA Methylation Analysis Tools
 
+#### [Sesame](https://github.com/zwdzwd/sesame): Accurate and efficient analysis pipeline for Illumina methylation arrays.
 #### [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/): Trimming of adapters and low-quality bases for methylation sequencing.
 #### [Bismark](https://github.com/FelixKrueger/Bismark): Alignment and methylation extraction from bisulfite-treated sequencing data.
 #### [MethylKit](https://github.com/al2na/methylKit): Differential methylation analysis and visualization of methylation data.
 #### [DeepTools](https://deeptools.readthedocs.io/en/develop/): Visualization of methylation and coverage data.
 #### [methpipe](https://github.com/smithlabcode/methpipe): Comprehensive analysis pipeline for methylation data.
-#### [Sesame](https://github.com/zwdzwd/sesame): Accurate and efficient analysis pipeline for Illumina methylation arrays.
 
 
 
