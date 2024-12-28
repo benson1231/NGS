@@ -9,7 +9,6 @@
 ---
 
 # DNAseq tools
-###### DNAseq Tools
 
 #### [FastQC](https://github.com/s-andrews/FastQC): Quality control of raw FastQ data to assess sequencing quality.
 #### [MultiQC](https://github.com/MultiQC/MultiQC): Combines multiple QC reports into a single summary.
