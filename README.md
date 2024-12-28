@@ -1,4 +1,4 @@
-# RNAseq workflow
+# RNAseq tools
 ### [Fastp](https://github.com/OpenGene/fastp): Preprocessing and quality control for raw FastQ data.
 ### [FastQC](https://github.com/s-andrews/FastQC): Quality assessment of sequencing data after preprocessing.
 ### [MultiQC](https://github.com/MultiQC/MultiQC): Aggregates and summarizes multiple QC reports.
