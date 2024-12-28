@@ -10,8 +10,6 @@
 
 # DNAseq tools
 
-#### [FastQC](https://github.com/s-andrews/FastQC): Quality control of raw FastQ data to assess sequencing quality.
-#### [MultiQC](https://github.com/MultiQC/MultiQC): Combines multiple QC reports into a single summary.
 #### [BWA](https://github.com/lh3/bwa): Alignment of DNA sequencing reads to a reference genome.
 #### [samtools](https://github.com/samtools/samtools): Processing, sorting, and indexing of SAM/BAM files.
 #### [Picard](https://github.com/broadinstitute/picard): Marking duplicates and calculating alignment metrics.
@@ -22,11 +20,8 @@
 
 # DNA Methylation Analysis Tools
 
-#### [FastQC](https://github.com/s-andrews/FastQC): Quality control for raw FastQ methylation data.
 #### [Trim Galore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/): Trimming of adapters and low-quality bases for methylation sequencing.
 #### [Bismark](https://github.com/FelixKrueger/Bismark): Alignment and methylation extraction from bisulfite-treated sequencing data.
-#### [samtools](https://github.com/samtools/samtools): Conversion, sorting, and indexing of SAM/BAM files from methylation alignments.
-#### [picard](https://github.com/broadinstitute/picard): Mark duplicates for bisulfite sequencing data.
 #### [MethylKit](https://github.com/al2na/methylKit): Differential methylation analysis and visualization of methylation data.
 #### [BS-Seeker2](https://github.com/BS-Seeker/BSseeker2): Bisulfite sequencing alignment and methylation calling.
 #### [DeepTools](https://deeptools.readthedocs.io/en/develop/): Visualization of methylation and coverage data.
